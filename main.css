@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  background-color: #394ae0;
+  color: #fff;
+  padding: 1vh 0;
+}
+
+h1,h2{
+  font-style: italic;
+}
+
+header ul li{
+  display: inline;
+  margin-right: 1vw;
+  font-size: 18px;
+}
+
+.alinha{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#sobre_a_loja{
+  display: grid;
+  grid-template-columns: 47% 47%;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+#sobre_a_loja article h2,
+#produtos h2{
+  padding-bottom: 1vh;
+  margin-bottom: 1.5vh;
+  border-bottom: #444fecec 3px solid;
+  color: #6572e7;
+}
+
+#sobre_a_loja img{
+  max-width: 100%;
+  width: 100%;
+  height: 30vh;
+  padding-right: 6%;
+}
+
+.lista-tenis{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-tenis li{
+  list-style: none;
+  max-width: 30%;
+  margin-bottom: 24px;
+}
+
+.lista-tenis li img{
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #0000001c;
+}
+
+.lista-tenis li h3{
+  margin: 16px 0;
+  font-size: 1.5em;
+}
+
+button{
+  display: block;
+  width: 90%;
+  margin-top: 1vh;
+  padding: 6px 0;
+  border: none;
+  background-color: #6572e7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 85%;
+  }
+
+  #sobre_a_loja{
+    display: block;
+    font-size: 1em;
+  }
+
+  .lista-tenis{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+  }
+
+  .lista-tenis li{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .container {
+    max-width: 80%;
+    /* display: flex;  */
+    /* align-items: center; */
+  }
+
+  #sobre_a_loja{
+    display: block;
+    font-size: 1em;
+  }
+
+  .lista-tenis{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    align-items: center;
+  }
+
+  .lista-tenis li{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lista-tenis ul li {
+    text-align: center;
+  }
+}
